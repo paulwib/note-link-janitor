@@ -62,17 +62,6 @@ export default function updateBacklinks(
         }
       ]
     }));
-    const backlinkContainer = {
-      type: "root",
-      children: [
-        {
-          type: "list",
-          ordered: false,
-          spread: false,
-          children: backlinkNodes
-        }
-      ]
-    };
     backlinksString = `\n## Backlinks\n\n${backlinks
       .map(
         entry =>
