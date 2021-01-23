@@ -55,7 +55,7 @@ export default function getNoteLinks(tree: MDAST.Root): NoteLinkEntry[] {
         null
       );
       links.push({
-        targetTitle: ((node as unknown) as WikiLinkNode).data.alias,
+        targetTitle: ((node as unknown) as WikiLinkNode).value,
         context: closestBlockLevelAncestor
       });
       return true;
